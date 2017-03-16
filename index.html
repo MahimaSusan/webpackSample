@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>PWA picture Webpack</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="manifest" href="./manifest.json">
 </head>
+
 <body>
   <header>
     <h1>Image Gallery</h1>
@@ -14,7 +16,7 @@
   <section class="gallery-section">
     <a href="./html/subpage.html" class="img-link">
       <picture>
-        <source media="(max-width: 480px)" srcset="./images/gallery-img-3.jpg">
+        <source class="picture-gallery-first" media="(max-width: 480px)" srcset="./images/gallery-img-3.jpg">
         <source media="(max-width: 767px)" srcset="./images/gallery-img-7.jpg">
         <img src="./images/gallery-img-2.jpg" alt="a cute kitten">
       </picture>
@@ -46,9 +48,11 @@
   <section class="picture-section">
     <!-- can specify differnt images for diffrent pixel ratios, hence we can improve the picture quality in different DPR -->
     <p class="head">Different images for differnt DPR</p>
-    <picture>
+    <picture class="banner-section" id="img-container">
       <img src="./images/kitten-large.png" srcset="./images/kitten-large.png 1x, ./images/kitten-medium.png 2x, ./images/kitten-small.png 3x">
     </picture>
+<!--         <div class="banner-section" id="img-container">
+    </div> -->
   </section>
   <footer></footer>
   <script>
@@ -67,4 +71,5 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script type="text/javascript" src="bundle.js" charset="utf-8"></script>
 </body>
+
 </html>
