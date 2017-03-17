@@ -1,5 +1,23 @@
 {
 	"gallerySection": [{
+		"src": "./images/gallery-img-3.jpg",
+		"width": 480
+	}, {
+		"src": "./images/gallery-img-2.jpg",
+		"width": 480
+	}, {
+		"src": "./images/gallery-img-7.jpg",
+		"width": 480
+	}, {
+		"src": "./images/gallery-img-3.jpg",
+		"width": 480
+	}, {
+		"src": "./images/gallery-img-2.jpg",
+		"width": 480
+	}],
+	"gallerySectionMediaone": [{
+		"src": "./images/gallery-img-7.jpg"
+	}, {
 		"src": "./images/gallery-img-3.jpg"
 	}, {
 		"src": "./images/gallery-img-2.jpg"
@@ -7,19 +25,26 @@
 		"src": "./images/gallery-img-7.jpg"
 	}, {
 		"src": "./images/gallery-img-3.jpg"
+	}],
+	"gallerySectionMediatwo": [{
+		"src": "./images/gallery-img-2.jpg"
+	}, {
+		"src": "./images/gallery-img-7.jpg"
+	}, {
+		"src": "./images/gallery-img-3.jpg"
 	}, {
 		"src": "./images/gallery-img-2.jpg"
+	}, {
+		"src": "./images/gallery-img-7.jpg"
 	}],
 	"pictureSection": [{
-		"src": "./images/gallery-img-3.jpg"
-	}, {
-		"src": "./images/gallery-img-2.jpg"
-	}, {
-		"src": "./images/gallery-img-7.jpg"
-	}, {
-		"src": "./images/gallery-img-3.jpg"
-	}, {
-		"src": "./images/gallery-img-2.jpg"
+		"src": "./images/kitten-large.png",
+		"srcset1": "./images/kitten-large.png",
+		"srcset2": "./images/kitten-medium.png",
+		"srcset3": "./images/kitten-small.png",
+		"dpr1": "1x",
+		"dpr2": "2x",
+		"dpr3": "3x"
 	}]
 
 }

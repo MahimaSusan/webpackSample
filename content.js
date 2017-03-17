@@ -21,11 +21,27 @@ fetch('images.json')
             }
           });
         });
+        $.each(data.gallerySectionMediaone, function(index, item) {
+          $.each($(".picture-gallery-second"), function(def, dup) {
+            if (index == def) {
+              $(dup).attr("srcset", item.src);
+            }
+          });
+        });
+        $.each(data.gallerySectionMediatwo, function(index, item) {
+          $.each($(".picture-gallery-third"), function(def, dup) {
+            if (index == def) {
+              $(dup).attr("srcset", item.src);
+            }
+          });
+        });
 
         $.each(data.pictureSection, function(index, item) {
           $.each($(".image-bottom"), function(def, dup) {
             if (index == def) {
-              $(dup).attr("srcset", item.src);
+              $(dup).attr("src", item.src);
+              $(dup).attr("srcset", item.srcset1 + " " + item.dpr1 + "," + item.srcset2 + " " + item.dpr2 + "," + item.srcset3 + " " + item.dpr3);
+
             }
           });
         });
