@@ -2,9 +2,6 @@ module.exports = "It works from content.js.";
 $("a").click(function() {
   $(".picture-section").css("display", "block");
 });
-window.onload = function() {
-  $("<span>Hello world!</span>").insertAfter(".gallery-section");
-}
 fetch('images.json')
   .then(
     function(response) {
